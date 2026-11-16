@@ -1,0 +1,1250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#081b36">
+
+<title>Arulmigu Sri Kumaraswamy Temple | Koodakkarai</title>
+
+<meta name="description" content="Official-style bilingual information website for Arulmigu Sri Kumaraswamy Temple, Koodakkarai, Nambiyur, Erode District.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #081b36;
+  --navy2: #102d50;
+  --gold: #d6ad55;
+  --gold-light: #f4dfaa;
+  --cream: #fff9eb;
+  --white: #ffffff;
+  --text: #25344a;
+  --muted: #788397;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'Poppins', 'Noto Sans Tamil', sans-serif;
+  line-height: 1.7;
+}
+
+body.tamil {
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* TOP BAR */
+
+.topbar {
+  background: #06152b;
+  color: var(--gold-light);
+  padding: 9px 6%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+}
+
+/* HEADER */
+
+header {
+  background: var(--navy);
+  color: white;
+  border-bottom: 2px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  max-width: 1250px;
+  margin: auto;
+  min-height: 85px;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand-icon {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--gold-light);
+  font-size: 27px;
+}
+
+.brand h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  color: var(--gold-light);
+}
+
+.brand small {
+  font-size: 11px;
+  color: #d9d9d9;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.language-btn {
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--navy);
+  padding: 9px 16px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: white;
+  border: 0;
+  font-size: 27px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 590px;
+  background:
+    linear-gradient(90deg, rgba(4,17,37,.97), rgba(4,17,37,.72)),
+    url("images/temple-main.jpg") center/cover;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 75px 20px;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(214,173,85,.55);
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 850px;
+  position: relative;
+  z-index: 1;
+}
+
+.om {
+  color: var(--gold-light);
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  color: var(--gold-light);
+  font-family: 'Cinzel', 'Noto Sans Tamil', serif;
+  font-size: clamp(25px, 5vw, 46px);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.hero .tamil-title {
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+.hero p {
+  color: #eee2c6;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.hero-location {
+  color: var(--gold-light);
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.btn-outline {
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* COMMON SECTIONS */
+
+section {
+  padding: 75px 7%;
+  scroll-margin-top: 90px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading span {
+  color: #aa8032;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  color: var(--navy);
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.gold-line {
+  width: 75px;
+  height: 3px;
+  background: var(--gold);
+  margin: 14px auto;
+}
+
+/* INTRO */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.intro-image {
+  min-height: 340px;
+  border: 5px solid white;
+  outline: 1px solid var(--gold);
+  background:
+    linear-gradient(rgba(8,27,54,.15),rgba(8,27,54,.15)),
+    url("images/murugan.jpg") center/cover;
+  border-radius: 5px;
+}
+
+.intro-text h3 {
+  color: var(--navy);
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* DEITIES */
+
+.deity-section {
+  background: #f1e8d6;
+}
+
+.deity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.deity-card {
+  background: white;
+  border: 1px solid #e5d4ad;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: .3s;
+}
+
+.deity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #00000012;
+}
+
+.deity-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  background: #e9dfcb;
+}
+
+.deity-card h3 {
+  color: var(--navy);
+  padding: 15px 10px 4px;
+  font-size: 17px;
+}
+
+.deity-card p {
+  padding: 0 12px 18px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* HISTORY */
+
+.history-box {
+  background: white;
+  padding: 35px;
+  border-left: 4px solid var(--gold);
+  box-shadow: 0 5px 20px #00000008;
+}
+
+.history-box p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.history-note {
+  background: #fff4d9;
+  border: 1px solid #ead29a;
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* FESTIVAL */
+
+.festival-section {
+  background: var(--navy);
+  color: white;
+}
+
+.festival-section .section-heading h2 {
+  color: var(--gold-light);
+}
+
+.festival-section .section-heading p {
+  color: #c6ceda;
+}
+
+.festival-banner {
+  text-align: center;
+  border: 1px solid var(--gold);
+  padding: 28px 15px;
+  margin-bottom: 30px;
+  background: #ffffff08;
+}
+
+.festival-banner h3 {
+  color: var(--gold-light);
+  font-size: 23px;
+}
+
+.festival-banner p {
+  color: #e4d7ba;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff0b;
+  min-width: 500px;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #ffffff20;
+  font-size: 13px;
+}
+
+th {
+  color: var(--gold-light);
+  background: #ffffff0b;
+}
+
+td {
+  color: #f0eee9;
+}
+
+.festival-note {
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  font-size: 13px;
+}
+
+/* OTHER FESTIVALS */
+
+.other-festivals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.pending-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e8dfcd;
+}
+
+.pending-card h3 {
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.pending-card p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* GALLERY */
+
+.gallery-section {
+  background: #f1e8d6;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-item {
+  min-height: 210px;
+  background: #ded3bc;
+  border: 2px solid white;
+  outline: 1px solid #d6ad55;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  object-fit: cover;
+  transition: .4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+/* CONTACT */
+
+.contact-section {
+  background: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-card {
+  padding: 30px;
+  border: 1px solid #e6d5ae;
+  border-radius: 8px;
+}
+
+.contact-card h3 {
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.phone a {
+  color: #987126;
+  font-weight: 600;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  background: var(--navy);
+  color: white;
+  font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #06152b;
+  color: #ddd;
+  padding: 45px 7% 20px;
+  text-align: center;
+}
+
+footer h2 {
+  color: var(--gold-light);
+  font-family: 'Cinzel', serif;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 8px;
+}
+
+.footer-line {
+  height: 1px;
+  background: #d6ad5544;
+  margin: 25px auto;
+  max-width: 700px;
+}
+
+.footer-bottom {
+  color: #aab2c0;
+  font-size: 11px;
+}
+
+/* LANGUAGE */
+
+[data-en], [data-ta] {
+  transition: opacity .2s;
+}
+
+body.tamil [data-en] {
+  display: none !important;
+}
+
+body:not(.tamil) [data-ta] {
+  display: none !important;
+}
+
+/* MOBILE */
+
+@media(max-width:850px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    background: var(--navy);
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 1px solid var(--gold);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .intro-grid, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:550px) {
+  section {
+    padding: 55px 5%;
+  }
+
+  .brand h2 {
+    font-size: 12px;
+  }
+
+  .brand small {
+    font-size: 9px;
+  }
+
+  .hero {
+    min-height: 510px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .deity-grid, .other-festivals {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-item, .gallery-item img {
+    min-height: 145px;
+  }
+
+  .history-box {
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span data-en>🛕 Arulmigu Sri Kumaraswamy Temple</span>
+  <span data-ta>🛕 அருள்மிகு ஸ்ரீ குமாரசுவாமி திருக்கோயில்</span>
+  <span data-en>📍 Koodakkarai, Erode, Tamil Nadu</span>
+  <span data-ta>📍 கூடக்கரை, ஈரோடு, தமிழ்நாடு</span>
+</div>
+
+<!-- HEADER -->
+<header>
+<nav class="nav">
+
+  <div class="brand">
+    <div class="brand-icon">ॐ</div>
+    <div>
+      <h2 data-en>SRI KUMARASWAMY TEMPLE</h2>
+      <h2 data-ta>ஸ்ரீ குமாரசுவாமி திருக்கோயில்</h2>
+      <small>Koodakkarai · Nambiyur · Erode</small>
+    </div>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home" data-en>Home</a>
+    <a href="#home" data-ta>முகப்பு</a>
+
+    <a href="#about" data-en>About</a>
+    <a href="#about" data-ta>அறிமுகம்</a>
+
+    <a href="#deities" data-en>Deities</a>
+    <a href="#deities" data-ta>தெய்வங்கள்</a>
+
+    <a href="#history" data-en>History</a>
+    <a href="#history" data-ta>வரலாறு</a>
+
+    <a href="#festivals" data-en>Festivals</a>
+    <a href="#festivals" data-ta>திருவிழாக்கள்</a>
+
+    <a href="#contact" data-en>Contact</a>
+    <a href="#contact" data-ta>தொடர்பு</a>
+  </div>
+
+  <div style="display:flex;gap:12px;align-items:center">
+    <button class="language-btn" onclick="toggleLanguage()" id="langBtn">
+      தமிழ்
+    </button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+
+</nav>
+</header>
+
+<!-- HERO -->
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <div class="om">ॐ</div>
+
+    <p class="hero-location" data-en>THE DIVINE ABODE OF LORD MURUGAN</p>
+    <p class="hero-location" data-ta>வேலவன் துணை</p>
+
+    <h1 data-en>Arulmigu Sri Kumaraswamy Temple</h1>
+    <h1 class="tamil-title" data-ta>
+      கூடக்கரை<br>அருள்மிகு ஸ்ரீ குமாரசுவாமி திருக்கோயில்
+    </h1>
+
+    <p data-en>
+      A sacred place of worship dedicated to Lord Murugan,
+      with Goddess Valli and Goddess Deivanai.
+    </p>
+
+    <p data-ta>
+      வள்ளி தெய்வானை சமேத முருகப்பெருமான் அருள்பாலிக்கும்
+      புனிதத் திருத்தலம்.
+    </p>
+
+    <p data-en>KOODAKKARAI · NAMBIYUR · ERODE DISTRICT</p>
+    <p data-ta>கூடக்கரை · நம்பியூர் · ஈரோடு மாவட்டம்</p>
+
+    <div class="hero-buttons">
+      <a href="#about" class="btn btn-gold" data-en>Explore Temple</a>
+      <a href="#about" class="btn btn-gold" data-ta>திருக்கோயிலை அறிய</a>
+
+      <a href="#festivals" class="btn btn-outline" data-en>Festival Details</a>
+      <a href="#festivals" class="btn btn-outline" data-ta>திருவிழா விவரங்கள்</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>WELCOME TO OUR TEMPLE</span>
+    <span data-ta>திருக்கோயில் வரவேற்பு</span>
+
+    <h2 data-en>About Our Temple</h2>
+    <h2 data-ta>திருக்கோயில் அறிமுகம்</h2>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="intro-grid">
+    <div class="intro-image"></div>
+
+    <div class="intro-text">
+      <h3 data-en>Lord Murugan's Divine Blessings</h3>
+      <h3 data-ta>முருகப்பெருமானின் திருவருள்</h3>
+
+      <p data-en>
+        Arulmigu Sri Kumaraswamy Temple is situated
+        at Koodakkarai, Nambiyur Taluk, Erode District,
+        Tamil Nadu.
+      </p>
+
+      <p data-ta>
+        அருள்மிகு ஸ்ரீ குமாரசுவாமி திருக்கோயில்
+        தமிழ்நாடு, ஈரோடு மாவட்டம், நம்பியூர் வட்டாரம்,
+        கூடக்கரையில் அமைந்துள்ளது.
+      </p>
+
+      <p data-en>
+        The principal deity is Lord Murugan, worshipped
+        along with Goddess Valli and Goddess Deivanai.
+        The temple also has shrines for Vinayagar and
+        other deities.
+      </p>
+
+      <p data-ta>
+        இத்திருத்தலத்தின் மூலவராக முருகப்பெருமான்
+        வள்ளி தெய்வானை சமேதராக அருள்பாலிக்கிறார்.
+        விநாயகர் உள்ளிட்ட பிற தெய்வங்களுக்கும்
+        சன்னதிகள் உள்ளன.
+      </p>
+
+      <a href="#deities" class="btn btn-gold" data-en>Discover Deities</a>
+      <a href="#deities" class="btn btn-gold" data-ta>தெய்வங்களை அறிய</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- DEITIES -->
+<section class="deity-section" id="deities">
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>DIVINE PRESENCE</span>
+    <span data-ta>இறையருள்</span>
+
+    <h2 data-en>Our Deities</h2>
+    <h2 data-ta>திருக்கோயில் தெய்வங்கள்</h2>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="deity-grid">
+
+    <article class="deity-card">
+      <img src="images/murugan.jpg" alt="Lord Murugan"
+           onerror="this.style.display='none'">
+      <h3 data-en>Lord Murugan</h3>
+      <h3 data-ta>முருகப்பெருமான்</h3>
+      <p data-en>Presiding deity of the temple.</p>
+      <p data-ta>திருக்கோயிலின் மூலவர்.</p>
+    </article>
+
+    <article class="deity-card">
+      <img src="images/valli.jpg" alt="Goddess Valli"
+           onerror="this.style.display='none'">
+      <h3 data-en>Goddess Valli</h3>
+      <h3 data-ta>வள்ளி அம்மன்</h3>
+      <p data-en>Divine consort of Lord Murugan.</p>
+      <p data-ta>முருகப்பெருமானின் தேவியார்.</p>
+    </article>
+
+    <article class="deity-card">
+      <img src="images/deivanai.jpg" alt="Goddess Deivanai"
+           onerror="this.style.display='none'">
+      <h3 data-en>Goddess Deivanai</h3>
+      <h3 data-ta>தெய்வானை அம்மன்</h3>
+      <p data-en>Divine consort of Lord Murugan.</p>
+      <p data-ta>முருகப்பெருமானின் தேவியார்.</p>
+    </article>
+
+  </div>
+
+  <p style="text-align:center;margin-top:25px;font-size:13px"
+     data-en>Vinayagar and other deities are also worshipped at the temple.</p>
+
+  <p style="text-align:center;margin-top:25px;font-size:13px"
+     data-ta>திருக்கோயிலில் விநாயகர் மற்றும் பிற தெய்வங்களுக்கும் வழிபாடு நடைபெறுகிறது.</p>
+
+</div>
+</section>
+
+<!-- HISTORY -->
+<section id="history">
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>OUR HERITAGE</span>
+    <span data-ta>திருத்தலப் பாரம்பரியம்</span>
+
+    <h2 data-en>Temple History</h2>
+    <h2 data-ta>தல வரலாறு</h2>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="history-box">
+
+    <p data-en>
+      Arulmigu Sri Kumaraswamy Temple is a place of
+      worship dedicated to Lord Murugan at Koodakkarai.
+      The temple's complete historical background,
+      founding date and original construction period
+      are currently under research.
+    </p>
+
+    <p data-ta>
+      கூடக்கரை அருள்மிகு ஸ்ரீ குமாரசுவாமி திருக்கோயில்
+      முருகப்பெருமானுக்குரிய திருத்தலமாகும்.
+      இக்கோயிலின் முழுமையான வரலாறு, தோற்றம் மற்றும்
+      கட்டப்பட்ட காலம் குறித்த ஆய்வுகள் தொடர்ந்து நடைபெற்று வருகின்றன.
+    </p>
+
+    <p data-en>
+      Renovation work is reported to have taken place
+      within the last ten years. The exact year and
+      details are yet to be documented.
+    </p>
+
+    <p data-ta>
+      கடந்த பத்து ஆண்டுகளுக்குள் திருக்கோயிலில்
+      திருப்பணிகள் நடைபெற்றுள்ளதாகத் தெரிவிக்கப்பட்டுள்ளது.
+      அதன் சரியான ஆண்டு மற்றும் விவரங்கள்
+      இன்னும் சேகரிக்கப்படுகின்றன.
+    </p>
+
+    <div class="history-note">
+      <strong data-en>Historical research notice:</strong>
+      <strong data-ta>வரலாற்று ஆய்வுக் குறிப்பு:</strong>
+
+      <span data-en>
+        The temple's age has not been historically verified.
+        A previous estimate of 1,000–2,000 years is not
+        supported by documentary or archaeological evidence
+        at present.
+      </span>
+
+      <span data-ta>
+        திருக்கோயிலின் தொன்மை இதுவரை வரலாற்று
+        ஆவணங்களால் உறுதிப்படுத்தப்படவில்லை.
+        1,000–2,000 ஆண்டுகள் என்ற முந்தைய மதிப்பீட்டிற்கு
+        தற்போது உறுதிப்படுத்தப்பட்ட வரலாற்றுச் சான்றுகள் இல்லை.
+      </span>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="festival-section" id="festivals">
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>FESTIVAL CELEBRATIONS</span>
+    <span data-ta>திருவிழாக்கள்</span>
+
+    <h2 data-en>Kanda Sashti Festival 2026</h2>
+    <h2 data-ta>கந்தர் சஷ்டி விழா 2026</h2>
+    <div class="gold-line"></div>
+
+    <p data-en>10 November 2026 – 16 November 2026</p>
+    <p data-ta>10 நவம்பர் 2026 – 16 நவம்பர் 2026</p>
+  </div>
+
+  <div class="festival-banner">
+    <h3 data-en>Seven Days of Devotion</h3>
+    <h3 data-ta>ஏழு நாட்கள் சிறப்பு வழிபாடு</h3>
+
+    <p data-en>As published in the temple's 2026 festival invitation.</p>
+    <p data-ta>திருக்கோயிலின் 2026 ஆம் ஆண்டு விழா அழைப்பிதழின்படி.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-en>Date</th>
+          <th data-ta>தேதி</th>
+
+          <th data-en>Programme</th>
+          <th data-ta>நிகழ்ச்சி</th>
+
+          <th data-en>Time</th>
+          <th data-ta>நேரம்</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>10 Nov 2026</td>
+          <td data-en>Ganapathi Homam and Kappu Kattuthal</td>
+          <td data-ta>கணபதி ஹோமம் மற்றும் காப்பு கட்டுதல்</td>
+          <td>6:00 AM</td>
+        </tr>
+
+        <tr>
+          <td>10–15 Nov 2026</td>
+          <td data-en>Morning Sashti Abhishekam / Pooja</td>
+          <td data-ta>காலை சஷ்டி அபிஷேகம் / பூஜை</td>
+          <td>7:00–8:00 AM</td>
+        </tr>
+
+        <tr>
+          <td>10–15 Nov 2026</td>
+          <td data-en>Evening Sashti Abhishekam / Pooja</td>
+          <td data-ta>மாலை சஷ்டி அபிஷேகம் / பூஜை</td>
+          <td>6:00–7:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>16 Nov 2026</td>
+          <td data-en>Thirukkalyana Vizha begins</td>
+          <td data-ta>திருக்கல்யாண விழா ஆரம்பம்</td>
+          <td>6:00 AM</td>
+        </tr>
+
+        <tr>
+          <td>16 Nov 2026</td>
+          <td data-en>Thirukkalyana Utsavam</td>
+          <td data-ta>திருக்கல்யாண உற்சவம்</td>
+          <td>9:30–10:30 AM</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="festival-note">
+    <p data-en>
+      <strong>Devotee information:</strong>
+      Prasadam distribution and Annadhanam follow the
+      celebration. Devotees wishing to offer traditional
+      Seervarisai plates for the Thirukkalyanam are
+      requested to bring them from their homes.
+    </p>
+
+    <p data-ta>
+      <strong>பக்தர்களுக்கு அறிவிப்பு:</strong>
+      திருக்கல்யாண உற்சவத்தைத் தொடர்ந்து பிரசாதம்
+      வழங்குதல் மற்றும் அன்னதானம் நடைபெறும்.
+      திருக்கல்யாணத்திற்கு சீர்வரிசை செய்ய விரும்பும்
+      பக்தர்கள் தங்கள் இல்லத்திலிருந்து சீர்வரிசை
+      தட்டுகள் கொண்டு வரவும்.
+    </p>
+  </div>
+
+</div>
+</section>
+
+<!-- OTHER FESTIVALS -->
+<section>
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>ANNUAL CELEBRATIONS</span>
+    <span data-ta>ஆண்டு விழாக்கள்</span>
+
+    <h2 data-en>Other Temple Festivals</h2>
+    <h2 data-ta>பிற திருவிழாக்கள்</h2>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="other-festivals">
+    <div class="pending-card">
+      <h3 data-en>Annual Festival Calendar</h3>
+      <h3 data-ta>ஆண்டு திருவிழா நாட்காட்டி</h3>
+      <p data-en>Additional festival names and dates will be published after confirmation from the temple.</p>
+      <p data-ta>கோயில் நிர்வாகத்திடம் உறுதிப்படுத்திய பின்னர் பிற திருவிழாக்களின் பெயர்களும் தேதிகளும் வெளியிடப்படும்.</p>
+    </div>
+
+    <div class="pending-card">
+      <h3 data-en>Special Poojas</h3>
+      <h3 data-ta>சிறப்பு வழிபாடுகள்</h3>
+      <p data-en>Special pooja details are awaiting confirmation.</p>
+      <p data-ta>சிறப்பு பூஜை விவரங்கள் உறுதிப்படுத்தப்பட வேண்டியுள்ளது.</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>TEMPLE PHOTOGRAPHS</span>
+    <span data-ta>திருக்கோயில் புகைப்படங்கள்</span>
+
+    <h2 data-en>Temple Gallery</h2>
+    <h2 data-ta>புகைப்படத் தொகுப்பு</h2>
+    <div class="gold-line"></div>
+
+    <p data-en>Temple photographs will be added here.</p>
+    <p data-ta>திருக்கோயில் புகைப்படங்கள் இங்கு சேர்க்கப்படும்.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/temple-main.jpg" alt="Temple exterior"
+           onerror="this.alt='Temple exterior photograph pending'">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/murugan.jpg" alt="Lord Murugan">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/valli.jpg" alt="Goddess Valli">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/deivanai.jpg" alt="Goddess Deivanai">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/vinayagar.jpg" alt="Lord Vinayagar">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/festival.jpg" alt="Temple festival">
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+<div class="container">
+
+  <div class="section-heading">
+    <span data-en>GET IN TOUCH</span>
+    <span data-ta>தொடர்பு கொள்ள</span>
+
+    <h2 data-en>Temple Contact</h2>
+    <h2 data-ta>திருக்கோயில் தொடர்பு</h2>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <h3 data-en>Temple Contact Numbers</h3>
+      <h3 data-ta>திருக்கோயில் தொடர்பு எண்கள்</h3>
+
+      <div class="phone">
+        <span>Temple Contact 1</span>
+        <a href="tel:+919976446666">99764 46666</a>
+      </div>
+
+      <div class="phone">
+        <span>Temple Contact 2</span>
+        <a href="tel:+919360209393">93602 09393</a>
+      </div>
+
+      <div class="phone">
+        <span>Temple Sivachariyar 1</span>
+        <a href="tel:+918072639996">80726 39996</a>
+      </div>
+
+      <div class="phone">
+        <span>Temple Sivachariyar 2</span>
+        <a href="tel:+919566650035">95666 50035</a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h3 data-en>Temple Location</h3>
+      <h3 data-ta>திருக்கோயில் முகவரி</h3>
+
+      <p data-en>
+        Arulmigu Sri Kumaraswamy Temple,<br>
+        Koodakkarai,<br>
+        Nambiyur Taluk,<br>
+        Erode District,<br>
+        Tamil Nadu, India.
+      </p>
+
+      <p data-ta>
+        அருள்மிகு ஸ்ரீ குமாரசுவாமி திருக்கோயில்,<br>
+        கூடக்கரை,<br>
+        நம்பியூர் வட்டாரம்,<br>
+        ஈரோடு மாவட்டம்,<br>
+        தமிழ்நாடு.
+      </p>
+
+      <a class="map-link"
+         href="https://www.google.com/maps/search/?api=1&query=Sri+Kumaraswamy+Temple+Gudakkarai+638454"
+         target="_blank" rel="noopener">
+        📍 Open Google Maps
+      </a>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <h2>ॐ முருகா</h2>
+
+  <h3 data-en>Arulmigu Sri Kumaraswamy Temple</h3>
+  <h3 data-ta>அருள்மிகு ஸ்ரீ குமாரசுவாமி திருக்கோயில்</h3>
+
+  <p data-en>Koodakkarai · Nambiyur · Erode District · Tamil Nadu</p>
+  <p data-ta>கூடக்கரை · நம்பியூர் · ஈரோடு மாவட்டம் · தமிழ்நாடு</p>
+
+  <div class="footer-line"></div>
+
+  <p data-en>May Lord Murugan bless all devotees.</p>
+  <p data-ta>முருகப்பெருமானின் திருவருள் அனைவருக்கும் கிடைக்கட்டும்.</p>
+
+  <p>வெற்றிவேல் முருகனுக்கு அரோகரா!</p>
+
+  <div class="footer-line"></div>
+
+  <div class="footer-bottom">
+    © 2026 Arulmigu Sri Kumaraswamy Temple.
+    Temple information website.
+  </div>
+</footer>
+
+<script>
+let currentLanguage = "en";
+
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "ta" : "en";
+
+  document.body.classList.toggle(
+    "tamil",
+    currentLanguage === "ta"
+  );
+
+  document.documentElement.lang = currentLanguage;
+
+  document.getElementById("langBtn").textContent =
+    currentLanguage === "en" ? "தமிழ்" : "English";
+}
+
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("show");
+  });
+});
+</script>
+
+</body>
+</html>
